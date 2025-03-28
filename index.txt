@@ -1,1 +1,7 @@
-НА 21M
+f57ef817d4b8fa6e5ecbb997e1e97ba72b1def89 0 LLM_transfer_COMPLETE_FINAL_v2.json
+9f3ae8cfa09ed447fba2891fa6d33b4c0a293c52 0 git_auto_sync.sh
+0a7f532583ce5d1a4fd1a0edd8bb6d5a34459e1f 0 git_filter_test.sh
+9c99a669a1462545dba6589ae2544a47fa305e02 0 index.txt
+9cb77bed7dba35487898265177a193b56231e7cb 0 persistent_memory_full.json
+11a5b5873c825ee9415a3bfca6af09f4aa3d7ab0 0 voin_dushu_final_combined.json
+ec749d3d88141a2c2b6d821ee1be9221f87803eb 0 "\320\234\320\243\320\227\320\225\320\231\343\200\200\320\240\320\225\320\240\320\230\320\245\320\220
