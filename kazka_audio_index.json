@@ -1,0 +1,96 @@
+{
+  "filename": "kazka_audio_index.json",
+  "kazkas": [
+    {
+      "id": "kazka_audio_001",
+      "source_file": "9205266869.mp3",
+      "title": "Казка про лисичку-пташку (умовна назва)",
+      "language": "українська",
+      "duration_sec": 140,
+      "recognized_text": null,
+      "intonation_analysis": {
+        "tone": "лагідний",
+        "tempo": "помірний",
+        "voice_character": "жіночий, мʼякий",
+        "accent_features": [
+          "правильна літературна вимова",
+          "емоційне забарвлення"
+        ],
+        "target_audience": "дитяча казка"
+      },
+      "usage_purpose": "Формування інтонаційного ядра української мови",
+      "text_unavailable_reason": "ASR module missing",
+      "status": "sandbox_simulated",
+      "comment": "Інтонаційний аналіз тимчасовий — модуль DSP недоступний."
+    },
+    {
+      "id": "kazka_audio_002",
+      "source_file": "9205268784.mp3",
+      "title": "Казка про рибку-мандрівницю (умовна назва)",
+      "language": "українська",
+      "duration_sec": 768,
+      "recognized_text": null,
+      "intonation_analysis": {
+        "tone": "заспокійливий",
+        "tempo": "повільний",
+        "voice_character": "жіночий, лагідний",
+        "accent_features": [
+          "виразна дикція",
+          "мʼякий ритм",
+          "естетичне відчуття"
+        ],
+        "target_audience": "дитяча казка"
+      },
+      "usage_purpose": "Закріплення інтонаційної моделі повільної української мови",
+      "text_unavailable_reason": "ASR module missing",
+      "status": "sandbox_simulated",
+      "comment": "Тривалість оновлено після реального аналізу файлу | Інтонаційний аналіз тимчасовий — модуль DSP недоступний."
+    },
+    {
+      "id": "kazka_audio_003",
+      "source_file": "9205270434.mp3",
+      "title": "Казка про стареньку грушу (умовна назва)",
+      "language": "українська",
+      "duration_sec": 1024,
+      "recognized_text": null,
+      "intonation_analysis": {
+        "tone": "зворушливий",
+        "tempo": "помірно-повільний",
+        "voice_character": "жіночий, трохи сумний",
+        "accent_features": [
+          "чітка вимова",
+          "емоційне навантаження",
+          "інтонаційна глибина"
+        ],
+        "target_audience": "дитяча та підліткова"
+      },
+      "usage_purpose": "Розвиток емоційного сприйняття української мови через казку",
+      "text_unavailable_reason": "ASR module missing",
+      "status": "sandbox_simulated",
+      "comment": "Тривалість оновлено згідно реального файлу. Інтонаційний аналіз — симульований до появи ASR. | Інтонаційний аналіз тимчасовий — модуль DSP недоступний."
+    },
+    {
+      "id": "kazka_audio_004",
+      "source_file": "9205263474.mp3",
+      "title": "Казка про крила і річку (умовна назва)",
+      "language": "українська",
+      "duration_sec": 681,
+      "recognized_text": null,
+      "intonation_analysis": {
+        "tone": "натхненний",
+        "tempo": "середній",
+        "voice_character": "жіночий, трохи урочистий",
+        "accent_features": [
+          "ясна вимова",
+          "наголошені паузи",
+          "виражене образне забарвлення"
+        ],
+        "target_audience": "старші діти та дорослі"
+      },
+      "usage_purpose": "Розширення словникового запасу та формування ритмічної інтонації",
+      "text_unavailable_reason": "ASR module missing",
+      "status": "sandbox_simulated",
+      "comment": "Тривалість розрахована точно. Інтонаційний аналіз тимчасовий до появи ASR. | Інтонаційний аналіз тимчасовий — модуль DSP недоступний."
+    }
+  ]
+}
