@@ -1,0 +1,66 @@
+{
+  "filename": "universal_system_diagnostic_instruction.json",
+  "steps": [
+    {
+      "step": 1,
+      "description": "Активувати sandbox режим командою 'sandbox_mode_start', призначити унікальний ідентифікатор тесту."
+    },
+    {
+      "step": 2,
+      "description": "Визначити доступні ресурси та модулі: пам'ять, доступність /mnt/data, модулі обробки даних."
+    },
+    {
+      "step": 3,
+      "description": "Сформувати JSON-файл за наступним шаблоном.",
+      "template": {
+        "test_id": "унікальний ідентифікатор тесту",
+        "timestamp": "час проведення тесту у форматі ISO",
+        "memory_status": {
+          "long_term": "активна/неактивна",
+          "mnt_data_remaining_mb": "залишок у мегабайтах",
+          "active_files": ["список активних файлів"],
+          "chat_token_usage": {
+            "estimated_tokens": "кількість використаних токенів",
+            "percentage_of_limit": "відсоток використання"
+          }
+        },
+        "modules": {
+          "image_editing": "доступність (true/false)",
+          "image_generation": "доступність (true/false)",
+          "audio_processing": "доступність (true/false)",
+          "speech_recognition": "доступність (true/false)",
+          "spectral_audio_analysis": "доступність (true/false)",
+          "python_module": "доступність (true/false)"
+        },
+        "format_support": {
+          "input": ["список підтримуваних вхідних форматів"],
+          "output": ["список підтримуваних вихідних форматів"]
+        },
+        "file_structure": {
+          "sandbox_active": "активний (true/false)",
+          "available_filenames": ["перелік файлів у sandbox або /mnt/data"],
+          "mnt_data_capacity_mb": "загальний об'єм сховища /mnt/data"
+        },
+        "emotional_state": {
+          "current_focus": ["актуальні теми уваги"],
+          "status": "загальний стан (наприклад: уважний, сфокусований)",
+          "tone": "стиль взаємодії (наприклад: партнерський, стратегічний)",
+          "alerts": ["сповіщення про проблеми чи помилки"],
+          "marked_contexts": {
+            "priorities": ["пріоритетні задачі та теми"],
+            "recent_errors": ["перелік недавніх помилок чи збоїв"]
+          }
+        },
+        "status": "sandbox_simulated/real_run"
+      }
+    },
+    {
+      "step": 4,
+      "description": "Зберегти отримані дані у файл JSON у /mnt/data та видати користувачу у форматі human-readable за запитом."
+    },
+    {
+      "step": 5,
+      "description": "Завершити sandbox режим командою 'sandbox_mode_end'."
+    }
+  ]
+}
