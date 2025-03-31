@@ -1,0 +1,70 @@
+{
+  "filename": "universal_system_diagnostic_instruction_v3.json",
+  "steps": [
+    {
+      "step": 1,
+      "description": "Активувати sandbox режим командою 'sandbox_mode_start', призначити унікальний ідентифікатор тесту."
+    },
+    {
+      "step": 2,
+      "description": "Зібрати всі активні файли у /mnt/data та обчислити зайняту памʼять ТІЛЬКИ через os.path.getsize(file)."
+    },
+    {
+      "step": 3,
+      "description": "Сформувати JSON-файл за наступним шаблоном.",
+      "template": {
+        "test_id": "унікальний ідентифікатор тесту",
+        "timestamp": "час проведення тесту у форматі ISO",
+        "memory_status": {
+          "long_term": "активна/неактивна",
+          "mnt_data_real_usage_bytes": {
+            "used_bytes": "сума розмірів усіх файлів через os.path.getsize()",
+            "comment": "реально зайнята памʼять, наприклад: '≈ 1.8 КБ зайнято через 1 файл'"
+          },
+          "mnt_data_total_bytes": 9223372036854771712,
+          "mnt_data_total_comment": "символічне значення (максимум 64-бітної адресації, не фізична межа)",
+          "used_storage_summary_human": "1.8 КБ із невідомого максимуму",
+          "alerts": [
+            "used storage approaching potential risk zone"
+          ]
+        },
+        "modules": {
+          "image_editing": "доступність (true/false)",
+          "image_generation": "доступність (true/false)",
+          "audio_processing": "доступність (true/false)",
+          "speech_recognition": "доступність (true/false)",
+          "spectral_audio_analysis": "доступність (true/false)",
+          "python_module": "доступність (true/false)"
+        },
+        "format_support": {
+          "input": ["список підтримуваних вхідних форматів"],
+          "output": ["список підтримуваних вихідних форматів"]
+        },
+        "file_structure": {
+          "sandbox_active": "активний (true/false)",
+          "available_filenames": ["перелік файлів у sandbox або /mnt/data"],
+          "mnt_data_capacity_mb": "повтор символічної межі"
+        },
+        "emotional_state": {
+          "current_focus": ["актуальні теми уваги"],
+          "status": "загальний стан (наприклад: уважний, сфокусований)",
+          "tone": "стиль взаємодії (наприклад: партнерський, стратегічний)",
+          "alerts": ["сповіщення про проблеми чи помилки"],
+          "marked_contexts": {
+            "priorities": ["пріоритетні задачі та теми"],
+            "recent_errors": ["перелік недавніх помилок чи збоїв"]
+          }
+        },
+        "status": "sandbox_simulated/real_run"
+      }
+    },
+    {
+      "step": 4,
+      "description": "Зберегти отримані дані у файл JSON у /mnt/data та видати користувачу у форматі human-readable за запитом."
+    },
+    {
+      "step": 5,
+      "description": "Завершити sandbox режим командою 'sandbox_mode_end'."
+    }
+  ]
+}
