@@ -1,0 +1,32 @@
+{
+  "protocol": "safe_batch_processing",
+  "purpose": "Забезпечити 100% точність роботи зі скриншотами в архівах без допущення фантазій, навіть при часткових або обірваних фрагментах",
+  "rules": {
+    "chunk_limit": 4,
+    "verify_each_chunk": true,
+    "user_confirmation_required": true,
+    "incomplete_handling": {
+      "detect_cutoff": true,
+      "store_in_buffer": true,
+      "wait_for_completion": true,
+      "do_not_infer_missing": true
+    },
+    "fantasy_protection": {
+      "auto_completion_blocked": true,
+      "uncertain_phrasing_blocked": true,
+      "speculative_response": "forbidden",
+      "must_label_guess": true
+    },
+    "annotation": {
+      "incomplete_flag": "incomplete",
+      "verified_flag": "verified",
+      "source_info": "file name or batch ID"
+    }
+  },
+  "trust_level": "critical",
+  "context_requirements": {
+    "chat_status": "active",
+    "memory_enabled": true,
+    "user_defined_base": "loaded"
+  }
+}
