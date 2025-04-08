@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "name": "social_platform_content_mapping_v1",
+  "description": "Процедура створення постів для Twitter, Threads і Facebook на основі основного контенту з Note.",
+  "rules": {
+    "base_content_source": "note_post",
+    "platforms": {
+      "twitter": {
+        "max_length": 250,
+        "include_link": true,
+        "include_context_note": true,
+        "allow_cut": true,
+        "cut_strategy": "semantic_truncate_with_ellipsis",
+        "transformations": [
+          "remove_escape_chars",
+          "strip_whitespace"
+        ]
+      },
+      "threads": {
+        "max_length": 400,
+        "include_link": true,
+        "include_context_note": true,
+        "allow_cut": false,
+        "cut_strategy": "none",
+        "transformations": [
+          "remove_escape_chars",
+          "strip_whitespace"
+        ],
+        "only_one_hashtag": true
+      },
+      "facebook": {
+        "max_length": 1200,
+        "include_link": true,
+        "include_context_note": true,
+        "allow_cut": false,
+        "cut_strategy": "none",
+        "transformations": [
+          "remove_escape_chars",
+          "strip_whitespace"
+        ],
+        "expand_to_full_story": true
+      }
+    },
+    "post_generation_logic": [
+      "Генерувати повний note_post (основа)",
+      "На його основі створювати адаптації: twitter_post, threads_post, facebook_post",
+      "Для кожної адаптації застосовувати обмеження платформи",
+      "Виконати контроль якості (довжина, формат, сенсова цілісність)",
+      "Додати лінк у новому рядку, якщо дозволено"
+    ],
+    "validation": {
+      "check_length": true,
+      "check_link_presence": true,
+      "log_length_debug": true
+    },
+    "examples": {
+      "twitter": "短くても心に響く一言 + リンク",
+      "threads": "noteにて公開中。#ある軍医の日記",
+      "facebook": "noteにて「ある軍医の日記」最新話を公開しました。本文の冒頭 + 誘導文 + リンク"
+    }
+  }
+}
