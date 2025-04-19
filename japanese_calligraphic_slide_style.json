@@ -1,0 +1,24 @@
+{
+  "slide_style_base_jp_calligraphy": {
+    "version": "1.0",
+    "purpose": "Створення слайдів у стилі традиційної японської каліграфії для Threads / Insta / note",
+    "text_layout": "縦書き（top-to-bottom, right-to-left）",
+    "font_style": "軽やかで筆のような書道体（brush-inspired, floating）",
+    "line_spacing": "розділені вертикальні блоки, 1 рядок = 1 фраза",
+    "tone": "летючий, медитативний, тиша",
+    "background": {
+      "type": "和紙（традиційний японський папір）",
+      "texture": "легка зернистість, світло-сірий або білий, без різких тіней"
+    },
+    "visual_balance": {
+      "text_alignment": "центрований по вертикалі",
+      "padding": "широкі поля навколо",
+      "composition": "аскетична, без зайвих елементів"
+    },
+    "application": [
+      "Threads carousel",
+      "Instagram story",
+      "note header slide"
+    ]
+  }
+}

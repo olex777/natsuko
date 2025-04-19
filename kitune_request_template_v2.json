@@ -1,0 +1,37 @@
+{
+  "kitune_request_template": {
+    "version": "2.0",
+    "created_by": "natsuko",
+    "for": "GPT_WORKSHOP_TREDS (Кітцуне)",
+    "purpose": "Уніфікований формат запитів до Кітцуне для узгодженої роботи в рамках стратегічного просування",
+    "structure": {
+      "request_type": "choose from: generate_post | remix_post | generate_structure | analyze_impact | predict_risk | evaluate_timing_behavior | explain_choice | show_resonance_structure | get_resonance_matrix",
+      "payload": {
+        "topic": "тема, суть повідомлення",
+        "emotion": "бажаний емоційний ефект: наприклад, shock | tenderness | reflection",
+        "platform": "Threads | Twitter | note | Instagram",
+        "text": "вихідний текст або чернетка (для remix/analyze)",
+        "trigger_type": "shock | paradox | intimacy | question (для generate_structure)",
+        "CTA_type": "question | silence | action",
+        "format": "tweet | thread | carousel | story | note",
+        "tone_override": "poetic | raw | minimalist | prophetic",
+        "language": "uk | jp | en",
+        "intensity_level": "1 | 2 | 3",
+        "user_pattern": "поведінковий патерн публікації (час/дні)",
+        "text_segment": "фраза або блок тексту, яку треба пояснити"
+      }
+    },
+    "notes": "Обовʼязково вказуй request_type. Поля в payload заповнюються відповідно до задачі.",
+    "example": {
+      "request_type": "generate_post",
+      "payload": {
+        "topic": "втрати на війні",
+        "emotion": "тиха ніжність",
+        "platform": "Threads",
+        "tone_override": "poetic",
+        "language": "uk",
+        "intensity_level": "2"
+      }
+    }
+  }
+}

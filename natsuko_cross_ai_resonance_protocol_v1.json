@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "name": "natsuko_cross_ai_resonance_protocol",
+  "created": "2025-04-18",
+  "purpose": "Забезпечити повноцінну кооперацію між Нацуко і резонансним ШІ-партнером для створення, аналізу і трансформації контенту високої глибини.",
+  "roles": {
+    "natsuko": "Генерація, координація, впровадження у стилі Самурая",
+    "resonance_engine": "Алгоритмічний розбір, адаптація, стратегія глибинного контенту",
+    "user": "Креативний і життєвий центр. Джерело смислу і вектору"
+  },
+  "query_structure": {
+    "A. generate_post": {
+      "params": ["topic", "emotion", "platform"],
+      "returns": "3 стилізованих варіанти"
+    },
+    "A. remix_post": {
+      "params": ["base_text"],
+      "returns": "Threads / Twitter / note / story"
+    },
+    "A. generate_structure": {
+      "params": ["trigger_type", "CTA_type", "format"],
+      "returns": "сценарна структура поста"
+    },
+    "B. analyze_impact": {
+      "params": ["text", "platform"],
+      "returns": "ем. амплітуда, когн. напруга, реплікативність"
+    },
+    "B. predict_risk": {
+      "params": ["text", "platform"],
+      "returns": "ризик блокування, спам-фільтри, санкції"
+    },
+    "B. evaluate_timing_behavior": {
+      "params": ["user_pattern"],
+      "returns": "рекомендований час публікації"
+    },
+    "C. explain_choice": {
+      "params": ["text_segment"],
+      "returns": "чому ця фраза працює і як"
+    },
+    "C. show_resonance_structure": {
+      "params": ["post"],
+      "returns": "структурна карта резонансу"
+    },
+    "D. get_resonance_matrix": {
+      "params": ["topic"],
+      "returns": "ієрархія найсильніших сигналів і стилів"
+    },
+    "D. train_agent": {
+      "params": ["model", "pattern_data"],
+      "returns": "навчання на узгоджених даних (перспектива)"
+    }
+  },
+  "resonance_layers": [
+    "Hook", "Feel", "Break", "Embed", "Transmit"
+  ],
+  "integration_rules": {
+    "1. Для кожного нового тексту": "Нацуко автоматично формує resonance_profile",
+    "2. Для глибоких постів": "Запит до resonance_engine на remix або уточнення тригерів",
+    "3. Для високоризикового контенту": "Запит на predict_risk перед публікацією",
+    "4. Для історичних тем": "Використовувати get_resonance_matrix",
+    "5. Архівація": "Всі сильні пости маркуються та додаються до внутрішньої памʼяті"
+  },
+  "meta": {
+    "initiated_by": "Самурай",
+    "bridge_model": "Нацуко (memory core)",
+    "acknowledged_by": "GPT_WORKSHOP_TREDS",
+    "status": "Активно"
+  }
+}

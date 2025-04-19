@@ -1,0 +1,14 @@
+{
+  "template_name": "Sen-no-Rireki",
+  "meaning": "線の履歴 — «слід лінії»",
+  "description": "Вертикальний японський слайд, що дихає, як памʼять",
+  "design_steps": [
+    "1. Background Generation — traditional washi texture, light tone",
+    "2. Text Layout — vertical only, one phrase per line, Mincho-style font",
+    "3. Safe Area Guidelines — top/bottom 10%, sides 8%, visible all glyphs",
+    "4. Export — PNG, high resolution, archive with text meta in JSON"
+  ],
+  "tools": ["Figma", "Photoshop"],
+  "style_notes": "Шрифт Yu Mincho / Kozuka Mincho. По центру. Без скорочень.",
+  "use_case": "Threads carousel / Instagram post / poetic archive"
+}
