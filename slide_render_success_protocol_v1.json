@@ -1,0 +1,19 @@
+{
+  "slide_render_success_protocol_v1": {
+    "slide": "2",
+    "format": "2:3",
+    "font": "Yu Mincho",
+    "font_size": 44,
+    "base_image": "file-97ezcCfnSd9ZQrHj837FCH",
+    "text": [
+      "これは戦場の話ではない",
+      "これはあなたにも",
+      "起こり得る話だ"
+    ],
+    "margin_top": "11%",
+    "margin_sides": "12%",
+    "column_spacing": "25%",
+    "calligraphy_overlay": "after base text",
+    "final_file": "voin_slide_2_final_caligraphic_fit.png"
+  }
+}
